@@ -17,9 +17,11 @@ def start_game
       Game.new(Players::Human.new("X"), Players::Computer.new("O"),Board.new).play
       else Game.new(Players::Human.new("O"),Players::Computer.new("O"),Board.new).play
       end
+    elsif play_mode == "0"
+      Game.new(Players::Computer.new("X"), Players::Computer.new("O"),Board.new),play
     elsif play_mode == "2"
-
-    elsif play_mode == "3"
-
+      Game.new(Players::Human.new("X"), Players::Human.new ("O"), Board.new.play)
   end
+  puts "Would you like to play again. [y/n]"
 end
+game_start until gets.strip == "n"

@@ -1,3 +1,22 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+def start_game
+  puts "Welcome to Tic Tac Toe"
+  puts "How do you want to play? Choose play mode:
+  0 - Computer vs Computer
+  1 - You vs Computer
+  2 - You vs a Friend"
+
+  play_mode = gets.strip
+
+  if play_mode == "1"
+    elsif play_mode == "1"
+
+    elsif play_mode == "2"
+
+    elsif play_mode == "3"
+      
+  end
+end
